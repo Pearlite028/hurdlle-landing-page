@@ -1,0 +1,622 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs class=" eat"*/
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+ 
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Luckiest Guy', cursive;
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+
+
+
+body{
+    /* max-width: 375px; */
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: hsl(193, 100%, 96%);
+    width: 100%;
+    height: 750px;
+    background-image: url("images/bg-hero-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+nav img{
+    width: 30%;
+    margin-left: 3%;
+    margin-top: 8%;
+}
+nav button{
+    width: 30%;
+    margin-right: 3%;
+    margin-top: 8%;
+    border-radius: 20px;
+    border: none;
+    padding: 6px 0;
+    font-family: 'Montserrat', sans-serif;
+    color:  hsl(192, 100%, 9%);
+    font-weight: 900;
+    background-color: white;
+    box-shadow: 2px 1px 5px rgb(161, 160, 160);
+}
+nav button:hover{
+    background-color: hsl(208, 11%, 55%);
+}
+header h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px; 
+    line-height: 30px;
+    font-weight: 900;
+    margin: 110px 0 0 0;
+    text-align: center;
+    color:  hsl(192, 100%, 9%);
+}
+header p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px; 
+    font-weight: 300;
+    line-height: 25px;
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+div button{
+    width: 60%;
+    margin: 50px auto ;
+    display: block;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: white;
+    background-color:  hsl(322, 100%, 66%);  
+}
+div button:hover{
+    background-color: hsl(208, 11%, 55%);
+}
+div img{
+   width: 75%;
+   margin: 45px auto;
+   display: block;
+}
+
+
+ @media only screen and (min-width: 1440px){
+    body{
+        /* max-width: 1440px; */
+        padding: 0;
+        margin: 0;
+        background-color: rgb(253, 253, 253);
+    }
+    header{
+        background-color: hsl(193, 100%, 96%);
+        width: 100%;
+        height: 750px;
+        background-image: url("images/bg-hero-mobile.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    nav img{
+        width: 15%;
+        margin-left: 3%;
+        margin-top: 3%;
+    }
+    nav button{
+        width: 15%;
+        margin-right: 3%;
+        margin-top: 3%;
+    }
+    .container{
+        display: flex;
+    }
+    .build{
+      width: 50%;
+      margin: 0;
+      padding: 0;
+    }
+    header h1{
+        font-size: 45px; 
+        line-height: 55px;
+        margin: 110px 0 0 40px;
+        text-align: left;
+        color:  hsl(192, 100%, 9%);
+    }
+    header p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px; 
+        text-align: left;
+        margin: 30px 20px 0 40px;
+    }
+    div button{
+        width: 45%;
+        margin: 40px 0 0 40px;
+        display: block;
+        border-radius: 30px;
+        border: none;
+        padding: 20px 15px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        color: white;
+        background-color:  hsl(322, 100%, 66%);  
+    }
+    .mockups{
+        width: 50%;
+    }
+    div img{
+        width: 95%;
+        margin: 45px 45px 0 0px;
+        display: block;
+        
+} 
+}
+ 
+
+ main{
+    position: relative;
+    width: 100%;
+    height: 1400px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+}
+main .illustration{
+    width: 80%;
+    height: 350px;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 25px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 2px 1px 5px rgb(161, 160, 160);
+
+}
+main img{
+    width: 65%;
+    height: 40%;
+    margin: 25px auto 15px; 
+    display: block;
+}
+main p{
+    text-align: center;
+    margin: 50px 0 10px 0;
+    font-size: 18px;
+    font-weight: 900;
+    color:  hsl(192, 100%, 9%);
+}
+main h2{
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    color: gray;
+    height: 40%;
+}
+.small-box{
+    position: absolute;
+    width: 80%;
+    height: 100px;
+    padding: 20px;
+    right: 15px;
+    bottom: -50px;
+    border-radius: 25px;
+    background-color: rgb(253, 253, 253);
+}
+.small-box h1{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 900;
+    margin: 10px 0 0 0;
+    color:  hsl(192, 100%, 9%);
+}
+.small-box button{
+    width: 65%;
+    margin: 20px auto ;
+    display: block;
+    border-radius: 25px;
+    border: none;
+    padding: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: white;
+    background-color:  hsl(322, 100%, 66%);  
+}
+
+ @media only screen and (min-width: 1440px) {
+    main{
+        position: relative;
+        width: 100%;
+        height: 1800px;
+        background-color: rgb(255, 255, 255);
+        font-family: 'Montserrat', sans-serif;
+    }
+    main .illustration{
+        width: 90%;
+        
+        height: 450px;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 25px;
+        background-color: rgb(253, 253, 253);
+        box-shadow: 2px 2px 2px rgb(235, 234, 234);
+        display: flex;
+        align-items: stretch;
+    
+    }
+    main .description{
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+    }
+    .the-images{
+    width: 50%;
+    padding: 0 20px 50px 20px; 
+    }
+    main img{
+        width: 90%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: block;
+        margin: 0;
+        padding: 0 0 0px 0;
+    }
+    main p{
+        text-align: left;
+        margin: 120px 50px 20px 60px;
+        font-size: 24px;
+        font-weight: 900;
+        color:  hsl(192, 100%, 9%);
+    }
+    main h2{
+        text-align: left;
+        margin: 0px 50px 20px 60px;
+        font-size: 14px;
+        line-height: 18px;
+        color: gray;
+        height: 40%;
+    } 
+    .small-box{
+        position: absolute;
+        width: 45%;
+        height: 100px;
+        padding: 10px;
+        right: 355px;
+        bottom: -50px;
+        border-radius: 25px;
+        background-color: rgb(253, 253, 253);
+    }
+    .small-box h1{
+        text-align: center;
+        font-size: 26px;
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+        color:  hsl(192, 100%, 9%);
+    }
+    .small-box button{
+        width: 35%;
+        margin: 20px auto ;
+        display: block;
+        border-radius: 25px;
+        border: none;
+        padding: 15px 30px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        color: white;
+        background-color:  hsl(322, 100%, 66%);  
+    } 
+} 
+
+
+footer{
+    background-color:  hsl(192, 100%, 9%);;
+    font-family: 'Montserrat', sans-serif;
+}
+.contacts img{
+    margin: 100px 10px 0px 12px;
+    margin: 160px 0  20px 20px;
+    
+}
+footer div{
+  display: table;
+  margin: 20px 12px 20px 12px;  
+}
+footer div img{
+font-size: 25px;
+display: table-cell;
+margin: 0 22px 0 0; 
+color: white; 
+}
+footer div p{
+ font-size: 14px;
+ display: table-cell;
+ vertical-align: middle;
+ margin: 0px 20px;
+ color: rgb(255, 255, 255); 
+}
+footer ul{
+    display: block;
+    height: 55px;
+    margin-top: 50px;
+    
+}
+.second-ul.ul{
+    display: block;
+    height: 100px;
+    margin-top: 10px;
+}
+    footer ul li{
+       
+       margin: 20px 12px;
+       text-decoration: none;
+       list-style: none;
+       font-family: 'Montserrat', sans-serif;
+       color: white; 
+    }
+    footer ul li a{
+       text-decoration: none;
+       list-style: none;
+       font-family: 'Montserrat', sans-serif;
+       color: white; 
+    }
+    footer ul li a:hover{
+        color: cyan;
+    }
+.social-media{
+    height: 50px;
+    margin: 50px auto 20px;
+    display: block;
+    background-color:  hsl(192, 100%, 9%);
+}
+.social-media i{
+    font-size: 25px;
+    display: table-cell;
+    padding: 25px 0 15px 10px; 
+    color: white; 
+    display: inline-block; 
+    margin: 20px 40;
+}
+.social-media i:hover{
+    color: turquoise;
+}
+.social-media div{
+    margin: 20px auto 10px;
+}
+.social-media p{
+text-align: center;
+display: block;
+color: white;
+font-size: 14px;
+}
+.copyright h1{
+    color: rgb(255, 255, 254);
+    font-size: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.copyright a{
+   
+    text-decoration: none;
+    color: turquoise;
+}
+.copyright a:hover{
+    color:  hsl(208, 11%, 55%);
+}
+
+
+ @media only screen and (min-width: 1440px ) {
+    footer{
+        font-family: 'Montserrat', sans-serif;
+        background-color:  hsl(192, 100%, 9%);;
+    }
+    .footer-desktop{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    footer div{
+        display: table;
+        margin: 0px 12px 20px 12px; 
+    }
+    footer div img{
+        font-size: 25px;
+        display: table-cell;
+        margin: 0px 12px 0px 0px; 
+        color: white; 
+        }
+        footer div p{
+         font-size: 54px;
+         display: table-cell;
+         vertical-align: middle;
+         margin: 0 0 0 20px;
+         color: white; 
+        }
+        .lorem p{
+            padding-left: 10px;
+        }
+    .contacts img{
+        margin: 130px 10px 35px 170px;
+    }
+    footer div p{
+        font-size: 14px;
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0px 0 0 0;
+        color: white; 
+        width: 300px;
+        padding: 0;
+        text-align: left;
+       }
+    footer ul{
+        display: block;
+        margin: 0;
+        padding: 0;
+        margin-top: 0px;
+        
+    }
+    footer ul li{
+           margin: 0;
+           padding-bottom: 25px;
+           text-decoration: none;
+           list-style: none;
+           font-family: 'Montserrat', sans-serif;
+           color: white; 
+        }
+    footer ul li a{
+           text-decoration: none;
+           list-style: none;
+           font-family: 'Montserrat', sans-serif;
+           color: white; 
+        }
+    footer ul li a:hover{
+            color: cyan;
+        }
+    .social-media{
+        margin: 0;
+        padding: 0;
+        display: block;
+        background-color:  hsl(192, 100%, 9%);
+    }
+    .social-media i{
+        font-size: 25px;
+        display: table-cell;
+        padding: 0;
+        padding-right: 20px;
+        
+        padding: 0px 0 15px 10px; 
+        color: rgb(255, 255, 255); 
+        display: inline-block; 
+        margin: 0px;
+    }
+    .phone i{
+        transform: rotate(-50deg);
+    }
+    .social-media div{
+        margin: 0;
+        padding: 0;
+    }
+    .social-media i:hover{
+        color: turquoise;
+    }
+   .copyright{
+        width: 100%;
+        height: 100px;
+        margin: 0;
+        padding: 0;
+    }
+    .copyright h1{
+        color: rgb(255, 255, 254);
+        font-size: 10px;
+        text-align: right;
+        padding: 10px 0 0 0;
+    }
+    .copyright a{
+       
+        text-decoration: none;
+        color: turquoise;
+    }
+    .copyright p{
+        text-align: right;
+        display: block;
+        color: white;
+        font-size: 14px;
+        width: 100%;}
+    }
+    .copyright a:hover{
+        color:  hsl(208, 11%, 55%);
+}
